@@ -38,14 +38,14 @@ function tickTask(e) {
 
 function clearList(e) {
     // Clear out ul innerHTML
-    let ul = (document.querySelector('ul').innerHTML = '');
+    const ul = (document.querySelector('ul').innerHTML = '');
 }
 
 // submit data function
 
 function submit(e) {
     e.preventDefault();
-    let input = document.querySelector('input');
+    const input = document.querySelector('input');
     if (input.value != '') addTask(input.value);
     input.value = '';
 }
@@ -53,12 +53,11 @@ function submit(e) {
 // add To-do tasks
 
 function addTask(task) {
-    let ul = document.querySelector('ul');
-    let li = document.createElement('li');
-    li.innerHTML = `<span class="delete">x</span><input type="checkbox"><label>${task}` // turn into font awesome icon 
+    const ul = document.querySelector('ul');
+    const li = document.createElement('li');
+    li.innerHTML = `<span class="delete">x</span><input type="checkbox"><label>${task}`; // turn into font awesome icon
     ul.appendChild(li);
     document.querySelector('tasklist').style.display = 'block';
 }
 
-
-// need to replace li.innerHTML with font awesome icon 
+// need to replace li.innerHTML with font awesome icon
