@@ -51,6 +51,8 @@ label {
 h1 {
     text-align: center;
     color: #fff ; 
+    margin-top: 1em;
+    margin-bottom: 1.5em ; 
 }
 
 
@@ -72,12 +74,26 @@ input[type="text"]{
 }
 
 
-/* button { 
-    font-size: 1.5em ; 
-    /* color:  */
-    background-color: #fff;  
+.btn { 
+    font-weight: 700;
+    margin-top: 0.5em;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;  
+    box-sizing: border-box; 
+    font-size: var(--fs-h3); 
+    font-family: inherit; 
+    border-radius: 10%; 
 
-} */
+}
+
+.btn:focus,
+.btn:hover { 
+  background: #ffc400;
+
+}
+
+
 
 .tasklist { 
     background-color: #fff ; 
@@ -100,10 +116,12 @@ li {
 
 .delete { 
     background-color: var(--clr-red) ; 
-    padding: 0px 3px 0px 3px ; 
+    padding: 15px 15px 15px 1px ; 
     color: #fff ; 
     cursor: pointer;
-    margin-right: 10px ; 
+    box-sizing: border-box ; 
+    outline: none; 
+    margin-right: 20px ; 
 }
 
 @media (max-width: 640px){
@@ -121,4 +139,17 @@ li {
     button { 
         width: 10% ; 
     }
+}
+
+
+.clr { 
+    font-weight: 700 ; 
+    margin-top: 0.5em ; 
+    text-decoration: none;
+    border: 0 ; 
+    cursor: pointer;
+}
+
+.clr:hover{
+    color: green ; 
 }
