@@ -115,14 +115,17 @@ li {
 }
 
 .delete { 
-    background-color: var(--clr-red) ; 
     padding: 15px 15px 15px 1px ; 
-    color: #fff ; 
+    color: #000 ; 
     cursor: pointer;
     box-sizing: border-box ; 
     outline: none; 
-    margin-right: 20px ; 
+    margin-right: 20px ;   
+    margin-left: 20px ; 
+    font-size: var(--fs-h2)
 }
+
+
 
 @media (max-width: 640px){
     .main{
