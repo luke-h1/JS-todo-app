@@ -55,9 +55,8 @@ function submit(e) {
 function addTask(task) {
     const ul = document.querySelector('ul');
     const li = document.createElement('li');
-    li.innerHTML = `<span class="delete">x</span><input type="checkbox"><label>${task}`; // turn into font awesome icon
+    li.innerHTML = `<span class="delete">x</span><input type="checkbox"><label>${task}`; // fixed on styles.css
     ul.appendChild(li);
     document.querySelector('tasklist').style.display = 'block';
 }
 
-// need to replace li.innerHTML with font awesome icon
