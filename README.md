@@ -3,5 +3,4 @@ Vanilla JS todo App
 
 
 ## TO-DO : 
- * improve styles ✅
- * refactor JS ✅
+  * remake with bootstrap + alter JS as css isn't user friendly 
